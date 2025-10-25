@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pengpeng — The cheekiest memecoin on the block</title>
+  <meta name="description" content="Pengpeng - meme coin on BNB. No presale, no audit, just memes." />
+  <meta property="og:title" content="Pengpeng" />
+  <meta property="og:description" content="Meme. Community. Chaos. No presale, no audit, no promises." />
+  <meta property="og:image" content="/assets/og_image.png" />
+  <link rel="icon" href="/assets/favicon.ico" />
+
+  <style>
+    /* Simple dark Tailwind-like tiny CSS, no external deps */
+    :root{
+      --bg:#0b0b0b;--muted:#9ca3af;--card:#0f1720;--accent:#F3BA2F;--accent2:#FF6F00;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#050505);color:#fff; -webkit-font-smoothing:antialiased;}
+    .container{max-width:1100px;margin:0 auto;padding:28px;}
+    header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(6px);background:linear-gradient(180deg,rgba(0,0,0,0.6),transparent);z-index:20;padding:12px 0}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo-circle{width:44px;height:44px;border-radius:10px;background:var(--glass);display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .logo-circle img{width:36px;height:36px;object-fit:cover}
+    nav a{color:var(--muted);text-decoration:none;margin-left:10px;font-size:14px}
+    .cta{background:var(--accent);color:#000;padding:10px 14px;border-radius:999px;font-weight:700;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;padding:56px 0;align-items:center}
+    @media(min-width:900px){ .hero{grid-template-columns:1fr 1fr} }
+    .hero-left h1{font-size:36px;margin:0 0 12px 0}
+    .hero-left p{color:var(--muted);margin:0 0 18px 0;max-width:48ch}
+    .buttons{display:flex;gap:12px;align-items:center}
+    .btn-outline{border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:12px;color:#fff;text-decoration:none}
+    .hero-art{display:flex;align-items:center;justify-content:center}
+    .card{width:100%;max-width:420px;height:420px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+    .card img, .card video{width:100%;height:100%;object-fit:cover;display:block}
+    section{padding:36px 0}
+    .section-title{font-weight:700;margin-bottom:12px}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:900px){ .grid-2{grid-template-columns:1fr 1fr} }
+    .info-card{background:var(--card);padding:16px;border-radius:12px}
+    .muted{color:var(--muted);font-size:14px}
+    footer{padding:28px 0;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);font-size:14px}
+    .faq-item{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-bottom:8px}
+    .small{font-size:13px;color:var(--muted)}
+    .og-note{margin-top:12px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo-circle">
+          <!-- Replace /assets/hero_peng_static.webp with your logo (PNG/WebP) -->
+          <img src="/assets/hero_peng_static.webp" alt="Pengpeng logo">
+        </div>
+        <div>
+          <div style="font-weight:700">Pengpeng</div>
+          <div class="small">The cheekiest memecoin</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:12px">
+        <nav>
+          <a href="#about">About</a>
+          <a href="#token">Token</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://four.meme" class="cta" target="_blank" rel="noreferrer">Buy $PENG</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Pengpeng — The cheekiest memecoin on the block</h1>
+        <p>Meme. Community. Chaos. No presale, no audit, no promises.</p>
+
+        <div class="buttons">
+          <a class="cta" href="https://four.meme" target="_blank" rel="noreferrer">Buy on Four.meme</a>
+          <a class="btn-outline" href="#token">View Token</a>
+        </div>
+
+        <p style="margin-top:18px;color:var(--accent);font-weight:700">For the real ones. Pengpeng.</p>
+      </div>
+
+      <div class="hero-art">
+        <div class="card">
+          <!-- video fallback to static image if not present -->
+          <video autoplay loop muted playsinline poster="/assets/hero_peng_static.webp">
+            <source src="/assets/hero_peng_loop.webm" type="video/webm">
+            <!-- fallback image -->
+            <img src="/assets/hero_peng_static.webp" alt="Pengpeng hero">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="grid-2">
+        <div>
+          <div class="section-title">How Pengpeng was born</div>
+          <p class="muted">It started on a cold night between a chart crash and a Telegram shitstorm. While traders were counting losses, a little penguin waddled through the snow—tired of "to the moon" promises. He vowed to become a symbol of resistance: community, chaos, and cold flippers. Today Pengpeng wears a yellow cap — a parody nod, not an affiliation.</p>
+          <p class="og-note"><strong>Note:</strong> The cap is a parody. Pengpeng is not affiliated with Binance.</p>
+        </div>
+        <div>
+          <div class="info-card">
+            <!-- VIDEO placeholder -->
+            <div style="width:100%;height:200px;overflow:hidden;border-radius:8px;background:#000;display:flex;align-items:center;justify-content:center">
+              <!-- Replace /assets/launch_clip.mp4 with your own clip (optional) -->
+              <video controls style="width:100%;height:100%;object-fit:cover" poster="/assets/hero_peng_static.webp">
+                <source src="/assets/launch_clip.mp4" type="video/mp4">
+                Your browser does not support video.
+              </video>
+            </div>
+            <div style="margin-top:10px;font-size:13px;color:var(--muted)">[VIDEO1 – replace /assets/launch_clip.mp4]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOKEN -->
+    <section id="token">
+      <div class="section-title">Token info</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <div class="info-card" style="min-width:220px">
+          <div class="small">Name</div><div style="font-weight:700">Pengpeng</div>
+        </div>
+        <div class="info-card" style="min-width:220px">
+          <div class="small">Ticker</div><div style="font-weight:700">PENG</div>
+        </div>
+        <div class="info-card" style="min-width:220px">
+          <div class="small">Chain</div><div style="font-weight:700">BNB Smart Chain</div>
+        </div>
+        <div class="info-card" style="min-width:220px">
+          <div class="small">Contract</div><div style="font-weight:700">[Insert after deploy]</div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;max-width:540px">
+        <div class="muted">How to buy:</div>
+        <ol class="small" style="margin-top:8px;color:var(--muted)">
+          <li>Connect a wallet (MetaMask / Binance Chain Wallet / Trust Wallet)</li>
+          <li>Go to <a href="https://four.meme" target="_blank" rel="noreferrer">four.meme</a> and search PENG</li>
+          <li>Swap and confirm</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap">
+      <div class="section-title">Roadmap (ideas, not promises)</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <div class="info-card" style="min-width:160px">Phase 1: Launch & community</div>
+        <div class="info-card" style="min-width:160px">Phase 2: Memes & stickers</div>
+        <div class="info-card" style="min-width:160px">Phase 3: Mini-game & merch</div>
+        <div class="info-card" style="min-width:160px">Phase 4: Growth & listings</div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-title">FAQ</div>
+
+      <div style="margin-top:12px">
+        <div class="faq-item"><strong>What is Pengpeng?</strong><div class="small" style="margin-top:6px">Pengpeng is a meme-coin born from internet culture. A penguin with a cap — community-first, meme-forward.</div></div>
+
+        <div class="faq-item"><strong>Is Binance or CZ involved?</strong><div class="small" style="margin-top:6px">No. The cap is a parody nod; Pengpeng is not affiliated with Binance or Changpeng Zhao.</div></div>
+
+        <div class="faq-item"><strong>How do I buy PENG?</strong><div class="small" style="margin-top:6px">Connect your wallet and buy on Four.meme. No presale, no whitelist.</div></div>
+
+        <div class="faq-item"><strong>Is there a presale or audit?</strong><div class="small" style="margin-top:6px">No presale, no audit. This is a community meme token.</div></div>
+
+        <div class="faq-item"><strong>Should I hold or trade?</strong><div class="small" style="margin-top:6px">Do what you like. If you HODL, you join the meme club.</div></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>© <span id="year"></span> Pengpeng. Not affiliated with Binance.</div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a href="#" class="small">Terms</a>
+          <a href="#" class="small">Privacy</a>
+          <a href="https://twitter.com" target="_blank" rel="noreferrer" class="small">X</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // NOTE: This is a static page. Real WalletConnect requires a small app / libs (React or JS).
+    // We keep it static to avoid the Next.js build complexity you had.
+    // Replace any /assets/* files in the public folder with your images/videos.
+  </script>
+</body>
+</html>
